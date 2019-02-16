@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.title_logo {
+  font-size: 3em;
+  font-family: "Lora", serif;
+}
+
+.wrap {
+  margin-top: 3em;
+  padding: 20px;
+  text-align: center;
+}
+
+.searchBtn {
+  position: absolute;
+  left: 68%;
+  /* top: 80%; */
+}
+
+.input {
+  max-width: 180px;
+  position: absolute;
+  left: 23%;
+  /* text-align: center; */
+}
+
+.row {
+  list-style: none;
+  background-color: #e9e5e5;
+  /* padding: 0.5em; */
+}
+
+.row:hover {
+  /* background-color: red; */
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #272727;
+  line-height: 1.5;
+  padding: 10px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.title {
+  font-size: 1.6em;
+  color: #053b69;
+  margin-bottom: 0.3em;
+  padding-left: 10px;
+  padding-top: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.title:hover {
+  color: #2a8cc4;
+}
+/* .loader { */
+/* border: 16px solid #f3f3f3; Light grey */
+/* border-top: 16px solid #3498db; Blue */
+/* border-radius: 50%; */
+/* width: 120px; */
+/* height: 120px; */
+/* animation: spin 6s linear infinite; */
+
+/* position: fixed;
+  z-index: 99;
+  /* margin: 0 auto; */
+/* display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .loader.hidden {
+  animation: spin 1s;
+  display: none;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); */
+/* opacity: 0; */
+/* visibility: hidden; */
+/* } */
+/* } */
+
+#loadingText {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 70%;
+  left: 25%;
+}
+
+@media screen and (min-width: 1020px) {
+  .title_logo {
+    font-size: 6.2em;
+    margin-top: em;
+  }
+  .widthTwenty {
+    max-width: 100px;
+  }
+
+  .input {
+    left: 40%;
+    /* top: 80%; */
+    background-color: inherit;
+    outline: none;
+    margin: 1em 0;
+    padding: 0.3em;
+    line-height: 1.2;
+    width: 15em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.112em;
+  }
+
+  .searchBtn {
+    left: 53%;
+    top: 44%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.7em;
+    transition: 0.2s ease-in-out;
+  }
+
+  .searchBtn:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .wrap {
+    margin-top: 5em;
+  }
+
+  .title {
+    font-size: 2em;
+    padding-top: 0.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  p {
+    padding-bottom: 1em;
+  }
+
+  #output {
+    margin: 5em 7em;
+    padding: 0;
+  }
+
+  #loadingText {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 60%;
+    left: 40%;
+  }
+}
