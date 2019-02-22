@@ -50,6 +50,6 @@ function loadText(e) {
       document.getElementById("output").innerHTML = markup;
     })
     .catch(function() {
-      document.getElementById("loadingText").style.display = "none";
+      // document.getElementById("loadingText").style.display = "none";
     });
 }

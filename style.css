@@ -63,38 +63,6 @@ p {
 .title:hover {
   color: #2a8cc4;
 }
-/* .loader { */
-/* border: 16px solid #f3f3f3; Light grey */
-/* border-top: 16px solid #3498db; Blue */
-/* border-radius: 50%; */
-/* width: 120px; */
-/* height: 120px; */
-/* animation: spin 6s linear infinite; */
-
-/* position: fixed;
-  z-index: 99;
-  /* margin: 0 auto; */
-/* display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .loader.hidden {
-  animation: spin 1s;
-  display: none;
-  animation-fill-mode: forwards;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg); */
-/* opacity: 0; */
-/* visibility: hidden; */
-/* } */
-/* } */
 
 #loadingText {
   display: none;
@@ -104,10 +72,10 @@ p {
   left: 25%;
 }
 
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 800px) {
   .title_logo {
     font-size: 6.2em;
-    margin-top: em;
+    /* margin-top: em; */
   }
   .widthTwenty {
     max-width: 100px;
@@ -128,7 +96,7 @@ p {
 
   .searchBtn {
     left: 53%;
-    top: 44%;
+    top: 44.5%;
     background: none;
     border: none;
     outline: none;
