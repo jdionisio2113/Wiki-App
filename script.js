@@ -18,8 +18,9 @@ const mod = (function () {
         document.getElementById("loadingText").style.display = "none";
 
         var markup = data.query.search.map(function (article) {
+          var encodedTitle = encodeURIComponent(article.title)
           return `<li class="row">
-            <a href="#" target="_blank">
+            <a href=https://en.wikipedia.org/wiki/${encodedTitle} target="_blank">
               <h1 class="title">${article.title}</h1>
               <p>${article.snippet}</p>
             </a>
