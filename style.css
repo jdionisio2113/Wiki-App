@@ -17,27 +17,13 @@ html, body {
   text-align: center;
 }
 
-.searchBtn {
-  position: absolute;
-  left: 68%;
-  /* top: 80%; */
-}
-
 .input {
   max-width: 180px;
-  position: absolute;
-  left: 23%;
-  /* text-align: center; */
 }
 
 .row {
   list-style: none;
   background-color: #e9e5e5;
-  /* padding: 0.5em; */
-}
-
-.row:hover {
-  /* background-color: red; */
 }
 
 a {
@@ -66,24 +52,23 @@ p {
 
 #loadingText {
   display: none;
-  position: absolute;
-  z-index: 99;
-  top: 70%;
-  left: 25%;
+  text-align: center;
+  margin: 2em 0;
+}
+
+#addPost {
+  text-align: center;
 }
 
 @media screen and (min-width: 800px) {
   .title_logo {
     font-size: 6.2em;
-    /* margin-top: em; */
   }
   .widthTwenty {
     max-width: 100px;
   }
 
   .input {
-    left: 40%;
-    /* top: 80%; */
     background-color: inherit;
     outline: none;
     margin: 1em 0;
@@ -95,8 +80,6 @@ p {
   }
 
   .searchBtn {
-    left: 53%;
-    top: 44.5%;
     background: none;
     border: none;
     outline: none;
@@ -107,10 +90,6 @@ p {
   .searchBtn:hover {
     cursor: pointer;
     transform: scale(1.2);
-  }
-
-  .wrap {
-    margin-top: 5em;
   }
 
   .title {
@@ -127,13 +106,5 @@ p {
   #output {
     margin: 5em 7em;
     padding: 0;
-  }
-
-  #loadingText {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 60%;
-    left: 40%;
   }
 }

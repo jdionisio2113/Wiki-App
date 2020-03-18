@@ -12,28 +12,31 @@ const mod = (function () {
     var endpoint = `https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=${input.value}&origin=*`
 
     //  Make AJAX Request
-    var data = fetch(endpoint)
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("loadingText").style.display = "none";
+    setTimeout(() => {
+      var data = fetch(endpoint)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("loadingText").style.display = "none";
 
-        var markup = data.query.search.map(function (article) {
-          var encodedTitle = encodeURIComponent(article.title)
-          return `<li class="row">
+          var markup = data.query.search.map(function (article) {
+            var encodedTitle = encodeURIComponent(article.title)
+            return `<li class="row">
             <a href=https://en.wikipedia.org/wiki/${encodedTitle} target="_blank">
               <h1 class="title">${article.title}</h1>
               <p>${article.snippet}</p>
             </a>
           </li>`
-        })
-          .join("");
+          })
+            .join("");
 
-        document.getElementById("output").innerHTML = markup;
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
+          document.getElementById("output").innerHTML = markup;
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    }, 1000);
   }
+
 
   return {
     loadTextListener() {
